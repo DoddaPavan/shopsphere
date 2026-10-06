@@ -1,0 +1,34 @@
+.category-card {
+  padding: 24px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+  color: #111827;
+}
+
+.category-card p {
+  margin: 0;
+
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
