@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./ProductCard.css";
 function ProductCard({
+  id,
   name,
   price,
   originalPrice,
@@ -26,7 +28,9 @@ const [isWishlisted, setIsWishlisted] = useState(false);
       <p className="product-category">{category}</p>
       <p className="product-rating">⭐ {rating}</p>
 
-      <h3>{name}</h3>
+     <Link to={`/product/${id}`} className="product-link">
+  <h3>{name}</h3>
+</Link>
 
    <div className="product-prices">
   <span className="product-price">
